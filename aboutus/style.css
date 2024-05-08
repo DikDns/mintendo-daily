@@ -1,0 +1,41 @@
+*,html{
+    margin: 0%;
+    padding: 0%;
+}
+.body{
+    color: white;
+}
+.navbar{
+    background-color: aquamarine;
+    height: 20vh;
+}
+.img-content{
+    width: 75px;
+    height: 75px;
+    margin-right: 20px;
+}
+.container-img{
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+
+}   
+.container-content{
+    display:block;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    justify-content: center;
+    height: 60vh;
+    margin-top: 10px;
+}
+.container-font{
+    display: block;
+    font-size: 20px;
+    justify-content: baseline;
+    align-items: baseline;
+    text-align:left;
+    margin-left: 50px;
+    margin-right: 50px;
+}
