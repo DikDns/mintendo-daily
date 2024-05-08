@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Search | Mintendo Daily</title>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+        .container {
+          @apply mx-auto px-4 sm:px-6 lg:px-8;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container pt-12">
+      <div
+        class="lg:max-w-[768px] flex items-center border-slate-950 border-2 py-1 px-4 rounded-full overflow-hidden focus-within:border-indigo-600 focus-within:ring-indigo-600 focus-within:ring-2 transition-colors duration-200 ease-in-out"
+      >
+        <label for="search" class="flex items-center mr-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            class="w-8 h-8 fill-stone-950"
+          >
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+          </svg>
+        </label>
+        <input
+          id="search"
+          type="text"
+          class="outline-none border-none active:outline-none active:border-none focus:outline-none focus:ring-transparent focus:border-none w-full px-4 md:text-lg"
+          autocomplete="off"
+        />
+      </div>
+
+      <section class="mt-8 pb-8">
+        <h2 class="text-2xl font-bold">Hasil Pencarian</h2>
+
+        <div id="articles">
+          <div class="mt-4 article">
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Placeholder"
+                class="w-24 h-24 rounded-lg"
+              />
+              <div>
+                <h3 class="text-lg font-semibold title">
+                  Pembelajaran Berbasis Proyek
+                </h3>
+                <p class="text-sm text-slate-950 line-clamp-2 description">
+                  Pembelajaran berbasis proyek adalah pembelajaran yang
+                  dilakukan dengan cara membuat suatu proyek.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 article">
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Placeholder"
+                class="w-24 h-24 rounded-lg"
+              />
+              <div>
+                <h3 class="text-lg font-semibold title">JavaScript Dasar</h3>
+                <p class="text-sm text-slate-950 line-clamp-2 description">
+                  JavaScript adalah bahasa pemrograman yang digunakan untuk
+                  membuat website interaktif.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 article">
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Placeholder"
+                class="w-24 h-24 rounded-lg"
+              />
+              <div>
+                <h3 class="text-lg font-semibold title">HTML Dasar</h3>
+                <p class="text-sm text-slate-950 line-clamp-2 description">
+                  HTML adalah bahasa markup yang digunakan untuk membuat
+                  struktur website.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 article">
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Placeholder"
+                class="w-24 h-24 rounded-lg"
+              />
+              <div>
+                <h3 class="text-lg font-semibold title">CSS Dasar</h3>
+                <p class="text-sm text-slate-950 line-clamp-2 description">
+                  CSS adalah bahasa style sheet yang digunakan untuk mengatur
+                  tampilan website.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4 article">
+            <div class="flex items-center space-x-4">
+              <img
+                src="https://via.placeholder.com/150"
+                alt="Placeholder"
+                class="w-24 h-24 rounded-lg"
+              />
+              <div>
+                <h3 class="text-lg font-semibold title">React Dasar</h3>
+                <p class="text-sm text-slate-950 line-clamp-2 description">
+                  React adalah library JavaScript yang digunakan untuk membuat
+                  website interaktif.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../assets/search.js"></script>
+  </body>
+</html>
