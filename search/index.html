@@ -16,10 +16,30 @@
       }
     </style>
   </head>
-  <body>
+  <body class="font-sans">
+    <!-- navbar on -->
+    <header class="bg-zinc-950 size-auto">
+      <div class="p-8 border-b-8 border-zinc-400 flex gap-3">
+        <h1 class="text-white text-3xl pr-20">Mintendo-Daily</h1>
+        <a
+          href="#"
+          class="text-white text-2xl px-3 hover:bg-white hover:text-black hover:border-white hover:rounded-3xl"
+          >Home</a
+        >
+        <a href="#" class="text-white text-2xl px-3 border-b hover:opacity-80"
+          >Search</a
+        >
+        <a
+          href="../about/"
+          class="text-white text-2xl px-3 hover:bg-white hover:text-black hover:border-white hover:rounded-3xl"
+          >Tentang Kami</a
+        >
+      </div>
+    </header>
+    <!-- navbar off -->
     <main class="container pt-12">
       <div
-        class="lg:max-w-[768px] flex items-center border-slate-950 border-2 py-1 px-4 rounded-full overflow-hidden focus-within:border-indigo-600 focus-within:ring-indigo-600 focus-within:ring-2 transition-colors duration-200 ease-in-out"
+        class="mx-auto flex items-center border-slate-950 border-2 py-1 px-4 rounded-full overflow-hidden focus-within:border-indigo-600 focus-within:ring-indigo-600 focus-within:ring-2 transition-colors duration-200 ease-in-out"
       >
         <label for="search" class="flex items-center mr-2">
           <svg
@@ -132,6 +152,16 @@
         </div>
       </section>
     </main>
+
+    <footer>
+      <div class="bg-gray-800 py-4">
+        <div class="container mx-auto flex justify-center items-center">
+          <p href="#" class="text-white text-xl px-3">
+            &copy; 2024 Mintendo-Daily
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <script src="../assets/search.js"></script>
   </body>
