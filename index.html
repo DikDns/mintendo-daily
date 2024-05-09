@@ -1,161 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "selector",
+      };
+    </script>
+
     <title>Home</title>
-</head>
-<body class="bg-gray-300">
-    <header class="bg-gray-800 size-auto">
-        <div class="p-8 border-b-8 border-gray-500 flex gap-3">
-            <h1 class="text-white text-3xl pr-20">Mintendo-Daily</h1>
-            <a href="/index.html" class="text-white text-2xl px-3 hover:bg-white hover:text-black hover:border-white border-b-2 hover:rounded-3xl">Home</a>
-            <a href="/search/index.html" class="text-white text-2xl px-3 hover:bg-white hover:text-black hover:border-white hover:rounded-3xl">Search</a>
-            <a href="/about/index.html" class="text-white text-2xl px-3 hover:bg-white hover:text-black hover:border-white hover:rounded-3xl">Tentang Kami</a>
-        </div>
+  </head>
+  <body class="bg-gray-300">
+    <!-- navbar on -->
+    <header class="bg-zinc-900 size-auto">
+      <div class="p-8 border-b-8 border-zinc-700 flex gap-3">
+        <h1 class="text-white text-3xl pr-20">Mintendo-Daily</h1>
+        <a
+          href="#"
+          class="text-white text-2xl px-3 border-b-2 hover:opacity-80 transition-all duration-200 ease-in-out"
+          >Home</a
+        >
+        <a
+          href="./search/index.html"
+          class="text-white text-2xl px-3 hover:bg-white hover:text-black hover:border-white hover:rounded-3xl transition-all duration-200 ease-in-out"
+          >Search</a
+        >
+        <a
+          href="./about/index.html"
+          class="text-white text-2xl px-3 hover:bg-white hover:text-black hover:border-white hover:rounded-3xl transition-all duration-200 ease-in-out"
+          >Tentang Kami</a
+        >
+      </div>
     </header>
+    <!-- navbar off -->
     <main class="flex justify-center">
-        <div class="min-h-screen justify-center bg-white size-3/4">
-            <div class="flex gap-10 p-10 justify-center">
-              <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*HqJqCjQHBO8AhR7MsTfY4g.jpeg" alt="" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Sejarah Nintendo</h2>
-                  <p class="text-justify">Sebelum menjadi nama yang dikenal luas di dunia permainan video, Nintendo adalah sebuah perusahaan kartu permainan kecil di Jepang.</p>
-                  <div class="card-actions justify-end">
-                    <a href="/articles/sejarah-nintendo.html">
-                      <button class="btn btn-primary">Baca Sekarang</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*2zwT16uShc3cVEm_" alt="" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Iklan Nintendo yang Belum Pernah Anda Lihat</h2>
-                  <p class="text-justify">Jika Anda mengikuti Nintendo of America di YouTube, daftar di atas akan terlihat familiar bagi Anda. Namun, di sisi Jepang, hal-hal sedikit berbeda.</p>
-                  <div class="card-actions justify-end">
-                    <a href="/articles/iklan-nintendo-yang-belum-pernah-anda-lihat.html">
-                      <button class="btn btn-primary">Baca Sekarang</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://miro.medium.com/v2/resize:fit:875/1*hCfoRK4XOm68nnjBZgQl9w.jpeg" alt="" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Pengumuman penerus Nintendo Switch resmi akan terjadi dalam tahun fiskal ini.</h2>
-                  <p class="text-justify">Akhirnya terjadi. Setelah bertahun-tahun bocoran, rumor, dan spekulasi, Nintendo telah memutuskan untuk mengakhiri diamnya mengenai penerus Switch atau konsol Switch 2 yang akan datang.</p>
-                  <div class="card-actions justify-end">
-                    <a href="/articles/pengumuman-penerus-nintendo-switch-resmi-akan-terjadi-dalam-tahun-fiskal-ini.html">
-                      <button class="btn btn-primary">Baca Sekarang</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex gap-10 px-10 pb-10 justify-center">
-              <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://miro.medium.com/v2/resize:fit:875/1*AMLCByHOunfyFZyJz00R1A.png" alt="" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Permainan Retro dan Seni Memeras Nostalgia</h2>
-                  <p class="text-justify">Pasar barang bekas untuk segala jenis media dulu adalah salah satu cara terbaik untuk mengikuti hal-hal yang terlewat; tidak jarang untuk masuk ke toko barang bekas dan menemukan rak-rak DVD dan kaset VHS seharga $1 per item.</p>
-                  <div class="card-actions justify-end">
-                    <a href="/articles/permainan-retro-dan-seni-memeras-sostalgia.html">
-                      <button class="btn btn-primary">Baca Sekarang</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*tZBSImlzjn_XOBAjNTn1yQ.png" alt="" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Saya Akhirnya Punya Pendapat tentang 'Princess Peach: Showtime'</h2>
-                  <p class="text-justify">Saya butuh waktu untuk benar-benar menghargai game ini. Saya tidak mengambilnya saat pertama kali dirilis.</p>
-                  <div class="card-actions justify-end">
-                    <a href="/articles/saya-akhirnya-punya-pendapat-tentang-princess-peach-showtime.html">
-                      <button class="btn btn-primary">Baca Sekarang</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://miro.medium.com/v2/resize:fit:875/0*WnBBCTAeT9d36qwp" alt="" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Nintendo Switch 2 dilaporkan memiliki Ray-Tracing dan kecepatan clock yang lebih baik, demikian klaim dalam sebuah podcast</h2>
-                  <p class="text-justify">Ketika membahas bocoran dan rumor mengenai penerus Nintendo Switch, informasi terus berdatangan.</p>
-                  <div class="card-actions justify-end">
-                    <a href="/articles/nintendo-switch-2.html">
-                      <button class="btn btn-primary">Baca Sekarang</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex gap-10 px-10 justify-center">
-              <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*gXJkXe-EQdmsVDHJ7xbAKA.jpeg" alt="" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Pokémon Unbound: Penjelajahan Mendalam ke Masterpiece Tidak Resmi</h2>
-                  <p class="text-justify">Pokémon Unbound, sebuah ROM hack buatan penggemar yang dibangun di atas Pokémon FireRed, bukan hanya perjalanan nostalgia lainnya.</p>
-                  <div class="card-actions justify-end">
-                    <a href="/articles/pokemon-unbound-penjelajahan-mendalam-ke-masterpiece-tidak-resmi.html">
-                      <button class="btn btn-primary">Baca Sekarang</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*96FxPB2waqHkOm0See_sXg.jpeg" alt="" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Konsol Nintendo Switch 2 Mendukung 4K dan Kompatibilitas Mundur, Klaim Produsen Aksesori</h2>
-                  <p class="text-justify">Sebuah produsen aksesori Nintendo Switch telah memposting detail tentang penerus konsol tersebut termasuk kemampuan grafis 4K, layar baru, pengontrol Joy-Con baru, kompatibilitas mundur, dan lainnya.</p>
-                  <div class="card-actions justify-end">
-                    <a href="/articles/konsol-nintendo-switch-2-mendukung-4k-dan-kompatibilitas-mundur-klaim-produsen-aksesori.html">
-                      <button class="btn btn-primary">Baca Sekarang</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*wc5B_HRcrbOY24lnHxK5xw.png" alt="" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">GameCube Games On Nintendo Switch Online? Ayolah, Ini Sudah Waktunya</h2>
-                  <p class="text-justify">Jadi saya suka Nintendo Switch Online. Saya tahu beberapa orang memberinya guff karena tier Expansion Pack-nya memiliki lebih banyak permainan dan sebagainya, tetapi Nintendo berhasil dengan emulasi setiap game yang mereka tambahkan.</p>
-                  <div class="card-actions justify-end">
-                    <a href="/articles/gamecube-games-di-nintendo-switch-online-ayolah-ini-sudah-waktunya.html">
-                      <button class="btn btn-primary">Baca Sekarang</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="flex gap-10 p-10 justify-center">
-              <div class="card card-compact w-96 bg-base-100 shadow-xl">
-                <figure><img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*zcFwlfJjjhTZbEo0fgIbew.png" alt="" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Cara Streaming Nintendo Switch ke Discord: Panduan Langkah demi Langkah untuk Berbagi Petualangan Gaming Anda</h2>
-                  <p class="text-justify">Membagikan petualangan bermain game Nintendo Switch Anda dengan teman di Discord menambahkan lapisan sosial pada pengalaman bermain game Anda.</p>
-                  <div class="card-actions justify-end">
-                    <a href="/articles/cara-streaming-nintendo-switch-ke-discord-panduan-langkah-demi-langkah-untuk-berbagi-petualangan-gaming-anda.html">
-                      <button class="btn btn-primary">Baca Sekarang</button>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="bg-gray-800 py-4">
-            <div class="container mx-auto flex justify-center items-center">
-                <a href="#" class="text-white text-xl px-3 hover:bg-white hover:text-black hover:border-white hover:rounded-3xl">
-                    &copy; 2024 Mintendo-Daily
+      <div class="min-h-screen justify-center size-3/4">
+        <div class="flex gap-10 p-10 justify-center">
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*HqJqCjQHBO8AhR7MsTfY4g.jpeg"
+                alt=""
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">Sejarah Nintendo</h2>
+              <p class="text-justify">
+                Sebelum menjadi nama yang dikenal luas di dunia permainan video,
+                Nintendo adalah sebuah perusahaan kartu permainan kecil di
+                Jepang.
+              </p>
+              <div class="card-actions justify-end">
+                <a href="./articles/sejarah-nintendo.html">
+                  <button class="btn btn-primary">Baca Sekarang</button>
                 </a>
+              </div>
             </div>
           </div>
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*2zwT16uShc3cVEm_"
+                alt=""
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                Iklan Nintendo yang Belum Pernah Anda Lihat
+              </h2>
+              <p class="text-justify">
+                Jika Anda mengikuti Nintendo of America di YouTube, daftar di
+                atas akan terlihat familiar bagi Anda. Namun, di sisi Jepang,
+                hal-hal sedikit berbeda.
+              </p>
+              <div class="card-actions justify-end">
+                <a
+                  href="./articles/iklan-nintendo-yang-belum-pernah-anda-lihat.html"
+                >
+                  <button class="btn btn-primary">Baca Sekarang</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://miro.medium.com/v2/resize:fit:875/1*hCfoRK4XOm68nnjBZgQl9w.jpeg"
+                alt=""
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                Pengumuman penerus Nintendo Switch resmi akan terjadi dalam
+                tahun fiskal ini.
+              </h2>
+              <p class="text-justify">
+                Akhirnya terjadi. Setelah bertahun-tahun bocoran, rumor, dan
+                spekulasi, Nintendo telah memutuskan untuk mengakhiri diamnya
+                mengenai penerus Switch atau konsol Switch 2 yang akan datang.
+              </p>
+              <div class="card-actions justify-end">
+                <a
+                  href="./articles/pengumuman-penerus-nintendo-switch-resmi-akan-terjadi-dalam-tahun-fiskal-ini.html"
+                >
+                  <button class="btn btn-primary">Baca Sekarang</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-10 px-10 pb-10 justify-center">
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://miro.medium.com/v2/resize:fit:875/1*AMLCByHOunfyFZyJz00R1A.png"
+                alt=""
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                Permainan Retro dan Seni Memeras Nostalgia
+              </h2>
+              <p class="text-justify">
+                Pasar barang bekas untuk segala jenis media dulu adalah salah
+                satu cara terbaik untuk mengikuti hal-hal yang terlewat; tidak
+                jarang untuk masuk ke toko barang bekas dan menemukan rak-rak
+                DVD dan kaset VHS seharga $1 per item.
+              </p>
+              <div class="card-actions justify-end">
+                <a
+                  href="./articles/permainan-retro-dan-seni-memeras-sostalgia.html"
+                >
+                  <button class="btn btn-primary">Baca Sekarang</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*tZBSImlzjn_XOBAjNTn1yQ.png"
+                alt=""
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                Saya Akhirnya Punya Pendapat tentang 'Princess Peach: Showtime'
+              </h2>
+              <p class="text-justify">
+                Saya butuh waktu untuk benar-benar menghargai game ini. Saya
+                tidak mengambilnya saat pertama kali dirilis.
+              </p>
+              <div class="card-actions justify-end">
+                <a
+                  href="./articles/saya-akhirnya-punya-pendapat-tentang-princess-peach-showtime.html"
+                >
+                  <button class="btn btn-primary">Baca Sekarang</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://miro.medium.com/v2/resize:fit:875/0*WnBBCTAeT9d36qwp"
+                alt=""
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                Nintendo Switch 2 dilaporkan memiliki Ray-Tracing dan kecepatan
+                clock yang lebih baik, demikian klaim dalam sebuah podcast
+              </h2>
+              <p class="text-justify">
+                Ketika membahas bocoran dan rumor mengenai penerus Nintendo
+                Switch, informasi terus berdatangan.
+              </p>
+              <div class="card-actions justify-end">
+                <a href="./articles/nintendo-switch-2.html">
+                  <button class="btn btn-primary">Baca Sekarang</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-10 px-10 justify-center">
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*gXJkXe-EQdmsVDHJ7xbAKA.jpeg"
+                alt=""
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                Pokémon Unbound: Penjelajahan Mendalam ke Masterpiece Tidak
+                Resmi
+              </h2>
+              <p class="text-justify">
+                Pokémon Unbound, sebuah ROM hack buatan penggemar yang dibangun
+                di atas Pokémon FireRed, bukan hanya perjalanan nostalgia
+                lainnya.
+              </p>
+              <div class="card-actions justify-end">
+                <a
+                  href="./articles/pokemon-unbound-penjelajahan-mendalam-ke-masterpiece-tidak-resmi.html"
+                >
+                  <button class="btn btn-primary">Baca Sekarang</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*96FxPB2waqHkOm0See_sXg.jpeg"
+                alt=""
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                Konsol Nintendo Switch 2 Mendukung 4K dan Kompatibilitas Mundur,
+                Klaim Produsen Aksesori
+              </h2>
+              <p class="text-justify">
+                Sebuah produsen aksesori Nintendo Switch telah memposting detail
+                tentang penerus konsol tersebut termasuk kemampuan grafis 4K,
+                layar baru, pengontrol Joy-Con baru, kompatibilitas mundur, dan
+                lainnya.
+              </p>
+              <div class="card-actions justify-end">
+                <a
+                  href="./articles/konsol-nintendo-switch-2-mendukung-4k-dan-kompatibilitas-mundur-klaim-produsen-aksesori.html"
+                >
+                  <button class="btn btn-primary">Baca Sekarang</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*wc5B_HRcrbOY24lnHxK5xw.png"
+                alt=""
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                GameCube Games On Nintendo Switch Online? Ayolah, Ini Sudah
+                Waktunya
+              </h2>
+              <p class="text-justify">
+                Jadi saya suka Nintendo Switch Online. Saya tahu beberapa orang
+                memberinya guff karena tier Expansion Pack-nya memiliki lebih
+                banyak permainan dan sebagainya, tetapi Nintendo berhasil dengan
+                emulasi setiap game yang mereka tambahkan.
+              </p>
+              <div class="card-actions justify-end">
+                <a
+                  href="./articles/gamecube-games-di-nintendo-switch-online-ayolah-ini-sudah-waktunya.html"
+                >
+                  <button class="btn btn-primary">Baca Sekarang</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex gap-10 p-10 justify-center">
+          <div class="card card-compact w-96 bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*zcFwlfJjjhTZbEo0fgIbew.png"
+                alt=""
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">
+                Cara Streaming Nintendo Switch ke Discord: Panduan Langkah demi
+                Langkah untuk Berbagi Petualangan Gaming Anda
+              </h2>
+              <p class="text-justify">
+                Membagikan petualangan bermain game Nintendo Switch Anda dengan
+                teman di Discord menambahkan lapisan sosial pada pengalaman
+                bermain game Anda.
+              </p>
+              <div class="card-actions justify-end">
+                <a
+                  href="./articles/cara-streaming-nintendo-switch-ke-discord-panduan-langkah-demi-langkah-untuk-berbagi-petualangan-gaming-anda.html"
+                >
+                  <button class="btn btn-primary">Baca Sekarang</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="bg-zinc-900 py-4">
+        <div class="container mx-auto flex justify-center items-center">
+          <p href="#" class="text-white text-xl px-3">
+            &copy; 2024 Mintendo-Daily
+          </p>
+        </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
