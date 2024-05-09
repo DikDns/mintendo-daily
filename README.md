@@ -12,6 +12,6 @@ Ninten- maksudnya mintendo daily adalah website statis berisi artikel-artikel me
 
 ## Kontributor
 
-- [Andika Eka Kurnia](https://www.linkedin.com/in/ciranita)
-- [Banu Arief Muzaki](https://www.linkedin.com/in/aryagustiana)
-- [Muhammad Rafi Zamzami](https://www.linkedin.com/in/ryan-gabriel-siringoringo-3a56a4254)
+- [Andika Eka Kurnia](https://github.com/DikDns)
+- [Banu Arief Muzaki](https://github.com/BANUAM)
+- [Muhammad Rafi Zamzami](https://github.com/Zreaei)
